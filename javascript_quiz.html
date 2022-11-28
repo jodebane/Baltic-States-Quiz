@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head><link rel="stylesheet" href="">
+
+
+
+</head>
+<body>
+
+<h1>Baltic States Quiz</h1>
+
+
+   <div id="h2">Question</div>
+   
+
+   <input type="radio" name="quiz" id="opt1" value="Option 1"> <label id="opt1label">Option 1</label></button> <br>
+   <input type="radio" name="quiz" id="opt2" value="Option 2"> <label id="opt2label">Option 2</label></button> <br>
+   <input type="radio" name="quiz" id="opt3" value="Option 3"> <label id="opt3label">Option 3</label> </button> <br>
+   <input type="radio" name="quiz" id="opt4" value="Option 4"> <label id="opt4label">Option 4</label></button> <br>
+
+   <button>Submit</button> <br>
+
+   <button onclick="testfunction()">testbutton</button> <br>
+
+   <label id="correctnesslabel"></label><br>
+
+ 
+
+
+
+
+
+
+<script type="module">
+
+
+///var mydata = JSON.parse(quizinfo);
+
+
+//test function 
+
+import qa_array from './catvar.js';
+
+
+
+
+document.getElementById("h2").innerHTML=qa_array[0];
+document.getElementById("opt1label").innerHTML=qa_array[1];
+document.getElementById("opt2label").innerHTML=qa_array[2];
+document.getElementById("opt3label").innerHTML=qa_array[3];
+document.getElementById("opt4label").innerHTML=qa_array[4];
+
+
+
+
+
+function testfunction(){
+   displaytruth(1)
+
+ 
+
+
+}
+
+//displays 'correct' if truth variable equals 1
+
+function displaytruth(answer){
+   if (answer == 1){
+      document.getElementById("correctnesslabel").innerHTML="Correct"
+   }
+
+
+}
+
+//I want this to import an array from JSON, and use it as the question and options
+
+///I want this to import a 
+
+
+</script>
+
+</body>
+</html>
