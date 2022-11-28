@@ -1,0 +1,26 @@
+
+{
+    
+    "quiztitle": "Quiz on the Baltic States",
+
+    "quizarray":[
+
+        { "questionblock1" :
+
+        {
+            "question":"What is the largest city in the Baltic States? ",
+            "answer1": "Riga",
+            "answer2": "Tallinn",
+            "answer3": "Vilnius",
+            "answer4": "Kaunas",
+            "correctanswervar":"answer1",
+            "correctanswer":"Riga"
+        }
+
+    }
+
+
+    ]
+
+
+}
