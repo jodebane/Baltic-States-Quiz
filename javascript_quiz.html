@@ -20,7 +20,7 @@
 
    <button>Submit</button> <br>
 
-   <button onclick="testfunction()">testbutton</button> <br>
+   <button id="testbutton">testbutton</button> <br>
 
    <label id="correctnesslabel"></label><br>
 
@@ -44,11 +44,19 @@ import qa_array from './catvar.js';
 
 
 
+
+document.getElementById("testbutton").addEventListener("click", newquestion);
+
+function newquestion(){
+
 document.getElementById("h2").innerHTML=qa_array[0];
 document.getElementById("opt1label").innerHTML=qa_array[1];
 document.getElementById("opt2label").innerHTML=qa_array[2];
 document.getElementById("opt3label").innerHTML=qa_array[3];
 document.getElementById("opt4label").innerHTML=qa_array[4];
+
+
+}
 
 
 
